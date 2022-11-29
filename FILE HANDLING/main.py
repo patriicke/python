@@ -1,7 +1,12 @@
-f = open('main.txt', "r")
-print(f.read())
+import os
+f = open("./FILE HANDLING/main.txt", "a")
+f.write("\nGender: Male")
 f.close()
 
-# open and read the file after the appending:
-# f = open("main.txt", "r")
-# print(f.read())
+
+# Deleting a file
+
+if os.path.exists("demofile.txt"):
+    os.remove("demofile.txt")
+else:
+    print("The file does not exist")

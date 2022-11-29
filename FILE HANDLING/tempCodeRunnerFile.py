@@ -1,3 +1,4 @@
-f = open("./main.txt", "r")
-print(f.read())
-f.close()
+("demofile.txt"):
+    os.remove("demofile.txt")
+else:
+    print("The file does not exist")
